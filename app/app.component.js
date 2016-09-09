@@ -15,7 +15,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'chartvector',
-            template: '<h1>ChartVector</h1>'
+            templateUrl: 'app/main.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

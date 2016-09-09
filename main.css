@@ -1,0 +1,27 @@
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+footer {
+    margin: 50px 0;
+}
+.margin-top-70{
+	margin-top:30px;
+}
+.copy{
+	margin-top:40px;
+	width:100%;
+	text-align: center;
+}
+hr{
+	color:green;
+}
+footer{
+background-color: #ffeeee; 
+height:300px;
+}

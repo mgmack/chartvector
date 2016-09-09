@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 @Component({
   selector: 'chartvector',
-  template: '<h1>ChartVector</h1>'
+  templateUrl: 'app/main.html'
 })
 export class AppComponent { }
