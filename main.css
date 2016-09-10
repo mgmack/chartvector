@@ -1,27 +1,113 @@
-
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+   background-color: #808080;
+   font-family: 'Montserrat', sans-serif; 
 }
 
-.portfolio-item {
+/*borders*/
+.black-border{
+	border:1px solid #000;
+}
+
+/*form items*/
+select {
+   border: 1px solid #000;
+   color:#b3b3b3;
+   font-size: 18px;
+   height: 49px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 310px;
+}
+input {
+   border: 1px solid #000;
+   color:#b3b3b3;
+   font-size: 18px;
+   height: 49px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 310px;
+}
+
+/*margins*/
+.left100{
+	margin-left:100px;
+}
+.left10{
+	margin-left:10px;
+}
+.top100 { 
+	margin-top:100px; 
+}
+.top130 { 
+	margin-top:100px; 
+}
+.top200 { 
+	margin-top:200px; 
+}
+.top250 { 
+	margin-top:250px; 
+}
+.top180 { 
+	margin-top:180px; 
+}
+.top160 { 
+	margin-top:160px; 
+}
+.top20{ 
+	margin-top:20px; 
+}
+.bottom20 { 
+	margin-bottom:20px; 
+}
+.bottom25 {
     margin-bottom: 25px;
 }
 
-footer {
-    margin: 50px 0;
+
+/*padding*/
+.padding-left120{
+	padding-left:120px;
 }
-.margin-top-70{
-	margin-top:30px;
+.padding-left100{
+	padding-left:100px;
 }
-.copy{
-	margin-top:40px;
-	width:100%;
-	text-align: center;
+.padding-left90{
+	padding-left:90px;
 }
-hr{
-	color:green;
+.padding-left80{
+	padding-left:80px;
+}
+.padding-left60{
+	padding-left:60px;
+}
+.padding-left30{
+	padding-left:30px;
+}
+
+/*sections and containers*/
+.main-container{
+	 border:1px solid #eee;
+	 background:url(images/blue-background.png);
+	 
 }
 footer{
-background-color: #ffeeee; 
-height:300px;
+	 margin: 50px 0;
+	 background-color: #ffeeee; 
+	 height:300px;
+}
+
+/*typography*/
+.bold{
+	font-weight:bold;
+}
+.white{
+	color:#fff;
+}
+.large-paragraph{
+	font-size: 24px;
+	line-height: 1.6;
+}
+.center{
+	text-align:center;
+}
+.huge{
+	font-size:90px;
 }
