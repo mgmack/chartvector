@@ -1,4 +1,4 @@
-# chartvector
+# ChartVector
 ChartVector.com Application built with Angular2 and Bootstrap
 
 ## Prerequisites
