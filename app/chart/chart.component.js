@@ -15,7 +15,7 @@ var ChartComponent = (function () {
     ChartComponent = __decorate([
         core_1.Component({
             selector: 'chart-output',
-            template: './chart.component.html',
+            templateUrl: 'app/chart/chart.component.html',
         }), 
         __metadata('design:paramtypes', [])
     ], ChartComponent);
