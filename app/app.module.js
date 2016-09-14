@@ -12,6 +12,9 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 /* App Root */
 var app_component_1 = require('./app.component');
+var about_component_1 = require('./about.component');
+/* Routing */
+var app_routing_1 = require('./app.routing');
 /* Feature Modules */
 var chart_module_1 = require('./chart/chart.module');
 var AppModule = (function () {
@@ -19,8 +22,8 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, chart_module_1.ChartModule],
-            declarations: [app_component_1.AppComponent],
+            imports: [platform_browser_1.BrowserModule, chart_module_1.ChartModule, app_routing_1.routing],
+            declarations: [app_component_1.AppComponent, about_component_1.AboutComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
