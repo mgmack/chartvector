@@ -103,9 +103,10 @@ input {
 }
 
 /*sections and containers*/
+
 .main-container{
 	 border:1px solid #eee;
-	 background:url(images/blue-background.png);
+	 background:url(../images/blue-background.png);
 }
 footer{
 	 margin: 50px 0;
@@ -132,4 +133,10 @@ footer{
 }
 .huge{
 	font-size:90px;
+}
+
+@media (max-width: 1199px) {
+    .main-container {
+      background: #dceffb;
+    }   
 }
