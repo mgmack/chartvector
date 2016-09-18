@@ -12,15 +12,20 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 /* App Root */
 var app_component_1 = require('./app.component');
+var about_component_1 = require('./about/about.component');
 /* Feature Modules */
 var chart_module_1 = require('./chart/chart.module');
+/* Feature Components */
+var header_component_1 = require('./header/header.component');
+var home_component_1 = require('./home/home.component');
+var footer_component_1 = require('./footer/footer.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, chart_module_1.ChartModule],
-            declarations: [app_component_1.AppComponent],
+            declarations: [app_component_1.AppComponent, about_component_1.AboutComponent, header_component_1.HeaderComponent, home_component_1.HomeComponent, footer_component_1.FooterComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
