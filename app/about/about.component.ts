@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'about',
-  template: './about.component.html',
+  templateUrl: 'about/about.html',
 })
 
 export class AboutComponent { }
