@@ -7,8 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'chartvector',
-  template: '<top></top><router-outlet></router-outlet><foot></foot>',
-  directives: [ HeaderComponent, HomeComponent, AboutComponent, FooterComponent ]
+  template: '<top></top><router-outlet></router-outlet><foot></foot>'
 })
 
 export class AppComponent { }
