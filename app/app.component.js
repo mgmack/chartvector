@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var header_component_1 = require('./header/header.component');
 var home_component_1 = require('./home/home.component');
+var about_component_1 = require('./about/about.component');
 var footer_component_1 = require('./footer/footer.component');
 var AppComponent = (function () {
     function AppComponent() {
@@ -18,8 +19,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'chartvector',
-            template: '<top></top><main></main><foot></foot>',
-            directives: [header_component_1.HeaderComponent, home_component_1.HomeComponent, footer_component_1.FooterComponent]
+            template: '<top></top><router-outlet></router-outlet><foot></foot>',
+            directives: [header_component_1.HeaderComponent, home_component_1.HomeComponent, about_component_1.AboutComponent, footer_component_1.FooterComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

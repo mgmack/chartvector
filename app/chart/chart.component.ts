@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'chart-output',
-  templateUrl: 'app/chart/chart.component.html',
+  templateUrl: 'chart/chart.html',
 })
 
 export class ChartComponent { }

@@ -57,11 +57,17 @@ input {
 .margin-top160 { 
 	margin-top:160px; 
 }
+.margin-top170 { 
+	margin-top:170px; 
+}
 .margin-top180 { 
 	margin-top:180px; 
 }
 .margin-top200 { 
 	margin-top:200px; 
+}
+.margin-top220 { 
+	margin-top:220px; 
 }
 .margin-top250 { 
 	margin-top:250px; 
@@ -139,4 +145,11 @@ footer{
     .main-container {
       background: #dceffb;
     }   
+}
+a.hover{
+	color: #fff;
+	text-decoration: underline;
+}
+a{
+	color: #fff;
 }
