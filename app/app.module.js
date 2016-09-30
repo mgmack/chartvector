@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var http_1 = require('@angular/http');
 /* App Root */
 var app_component_1 = require('./app.component');
 /* Routing */
@@ -26,7 +27,7 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, app_routing_1.routing],
+            imports: [platform_browser_1.BrowserModule, app_routing_1.routing, http_1.HttpModule],
             declarations: [app_component_1.AppComponent, about_component_1.AboutComponent, header_component_1.HeaderComponent, home_component_1.HomeComponent, pageNotFound_component_1.PageNotFoundComponent, footer_component_1.FooterComponent],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]

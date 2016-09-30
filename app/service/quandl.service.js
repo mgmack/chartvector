@@ -9,19 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var quandl_service_1 = require('./service/quandl.service');
-var AppComponent = (function () {
-    function AppComponent() {
+var http_1 = require('@angular/http');
+require('rxjs/add/operator/toPromise');
+var QuandlService = (function () {
+    function QuandlService(http) {
+        this.http = http;
+        this.endpoint_url = "https://www.quandl.com/api/v3/datasets/";
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'chartvector',
-            template: '<top></top><router-outlet></router-outlet><foot></foot>',
-            providers: [quandl_service_1.QuandlService]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    QuandlService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [http_1.Http])
+    ], QuandlService);
+    return QuandlService;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.QuandlService = QuandlService;
+//# sourceMappingURL=quandl.service.js.map

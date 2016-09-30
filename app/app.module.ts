@@ -1,5 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
 
 /* App Root */
 import { AppComponent } from './app.component';
@@ -20,7 +21,7 @@ import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
-	imports:      [ BrowserModule, routing ],
+	imports:      [ BrowserModule, routing, HttpModule ],
 	declarations: [ AppComponent, AboutComponent, HeaderComponent, HomeComponent, PageNotFoundComponent, FooterComponent ],
 	providers: [ appRoutingProviders ],
 	bootstrap: [ AppComponent ]
