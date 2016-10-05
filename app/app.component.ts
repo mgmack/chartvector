@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
+import { ZillowComponent } from './inputs/zillow/zillow.component';
 
 @Component({
   selector: 'chartvector',
