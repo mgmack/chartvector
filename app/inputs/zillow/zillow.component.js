@@ -22,13 +22,18 @@ var ZillowComponent = (function () {
             { value: 'RZSF', display: 'Median Sale Price' }
         ];
         this.categories = [
-            { value: 'Z', display: 'ZipCode' }
+            { value: 'Z', display: 'ZipCode' },
+            { value: 'C', display: 'City' }
+        ];
+        this.cities = [
+            { value: '0001', display: 'New York, NY' },
+            { value: '0002', display: 'Los Angeles, CA' }
         ];
     }
     ZillowComponent = __decorate([
         core_1.Component({
             selector: 'zillow-input',
-            templateUrl: 'app/inputs/zillow/zillow.html',
+            templateUrl: './templates/zillow/zillow.html',
         }), 
         __metadata('design:paramtypes', [])
     ], ZillowComponent);

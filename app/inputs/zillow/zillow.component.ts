@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'zillow-input',
-  templateUrl: 'app/inputs/zillow/zillow.html',
+  templateUrl: './templates/zillow/zillow.html',
 })
 
 export class ZillowComponent {
@@ -19,7 +19,13 @@ export class ZillowComponent {
   ];
 
   public categories = [
-    { value: 'Z', display: 'ZipCode' }
+    { value: 'Z', display: 'ZipCode' },
+    { value: 'C', display: 'City' }
+  ];
+
+  public cities = [
+    { value: '0001', display: 'New York, NY' },
+    { value: '0002', display: 'Los Angeles, CA' }
   ];
 
   /* Need to create model */
