@@ -10,6 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var http_1 = require('@angular/http');
+var forms_1 = require('@angular/forms');
 /* App Root */
 var app_component_1 = require('./app.component');
 /* Routing */
@@ -21,13 +23,14 @@ var about_component_1 = require('./about/about.component');
 var header_component_1 = require('./header/header.component');
 var home_component_1 = require('./home/home.component');
 var footer_component_1 = require('./footer/footer.component');
+var zillow_component_1 = require('./inputs/zillow/zillow.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, app_routing_1.routing],
-            declarations: [app_component_1.AppComponent, about_component_1.AboutComponent, header_component_1.HeaderComponent, home_component_1.HomeComponent, pageNotFound_component_1.PageNotFoundComponent, footer_component_1.FooterComponent],
+            imports: [platform_browser_1.BrowserModule, app_routing_1.routing, forms_1.FormsModule, http_1.HttpModule],
+            declarations: [app_component_1.AppComponent, about_component_1.AboutComponent, header_component_1.HeaderComponent, home_component_1.HomeComponent, pageNotFound_component_1.PageNotFoundComponent, footer_component_1.FooterComponent, zillow_component_1.ZillowComponent],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
         }), 

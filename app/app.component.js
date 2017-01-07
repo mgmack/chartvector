@@ -9,13 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var quandl_service_1 = require('./service/quandl.service');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'chartvector',
-            template: '<top></top><router-outlet></router-outlet><foot></foot>'
+            template: '<top></top><router-outlet></router-outlet><foot></foot>',
+            providers: [quandl_service_1.QuandlService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
