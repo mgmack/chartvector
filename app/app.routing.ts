@@ -20,14 +20,13 @@ const appRoutes: Routes = [
     component: HomeComponent
 
   },
-  { path: '**',
-	  component: PageNotFoundComponent
-
-  },
-
   {
     path: 'zillow',
     component: ZillowComponent
+
+  },
+  { path: '**',
+	  component: PageNotFoundComponent
 
   }
 

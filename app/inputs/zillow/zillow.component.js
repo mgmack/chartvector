@@ -32,9 +32,8 @@ var ZillowComponent = (function () {
     }
     ZillowComponent = __decorate([
         core_1.Component({
-            moduleId: module.id,
             selector: 'zillow-input',
-            templateUrl: 'zillow.html',
+            templateUrl: 'app/inputs/zillow/zillow.html',
         }), 
         __metadata('design:paramtypes', [])
     ], ZillowComponent);

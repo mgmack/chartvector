@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
   selector: 'zillow-input',
-  templateUrl: 'zillow.html',
+  templateUrl: 'app/inputs/zillow/zillow.html',
 })
 
 export class ZillowComponent {
