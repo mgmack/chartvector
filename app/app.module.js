@@ -23,7 +23,7 @@ var about_component_1 = require('./about/about.component');
 var header_component_1 = require('./header/header.component');
 var home_component_1 = require('./home/home.component');
 var footer_component_1 = require('./footer/footer.component');
-var zillow_component_1 = require('./inputs/zillow/zillow.component');
+var zillow_component_1 = require('./zillow/zillow.component');
 var AppModule = (function () {
     function AppModule() {
     }

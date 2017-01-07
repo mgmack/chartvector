@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'zillow-input',
-  templateUrl: 'app/inputs/zillow/zillow.html',
+  templateUrl: 'app/zillow/zillow.html',
 })
 
 export class ZillowComponent {
@@ -28,5 +28,5 @@ export class ZillowComponent {
     { value: '0002', display: 'Los Angeles, CA' }
   ];
 
-
+  /* Need to create model */
 }

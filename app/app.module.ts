@@ -19,7 +19,7 @@ import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
-import { ZillowComponent } from './inputs/zillow/zillow.component';
+import { ZillowComponent } from './zillow/zillow.component';
 
 
 @NgModule({
