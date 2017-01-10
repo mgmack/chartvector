@@ -14,8 +14,9 @@ var AboutComponent = (function () {
     }
     AboutComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'about',
-            templateUrl: 'about/about.html',
+            templateUrl: 'about.html',
         }), 
         __metadata('design:paramtypes', [])
     ], AboutComponent);

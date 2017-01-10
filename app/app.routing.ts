@@ -22,7 +22,8 @@ const appRoutes: Routes = [
   },
   {
     path: 'zillow',
-    component: ZillowComponent
+    component: ZillowComponent,
+    data: { title: 'Real Estate Chart Creator'}
 
   },
   { path: '**',
