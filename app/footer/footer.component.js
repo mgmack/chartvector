@@ -14,8 +14,9 @@ var FooterComponent = (function () {
     }
     FooterComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'foot',
-            templateUrl: 'footer/footer.html',
+            templateUrl: 'footer.html',
         }), 
         __metadata('design:paramtypes', [])
     ], FooterComponent);

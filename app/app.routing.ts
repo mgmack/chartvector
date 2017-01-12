@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 
 import { HomeComponent } from './home/home.component';
-import { ZillowComponent } from './inputs/zillow/zillow.component';
+import { ZillowComponent } from './zillow/zillow.component';
 import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
 const appRoutes: Routes = [
 
@@ -20,14 +20,14 @@ const appRoutes: Routes = [
     component: HomeComponent
 
   },
-  { path: '**',
-	  component: PageNotFoundComponent
-
-  },
-
   {
     path: 'zillow',
-    component: ZillowComponent
+    component: ZillowComponent,
+    data: { title: 'Real Estate Chart Creator'}
+
+  },
+  { path: '**',
+	  component: PageNotFoundComponent
 
   }
 
