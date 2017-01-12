@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Query } from './query';
 
 @Component({
   moduleId: module.id,
@@ -8,7 +9,20 @@ import { Component } from '@angular/core';
 
 export class ZillowComponent {
 
-  public indicators = [
+  indicators = ['MSP', 'MSPSF', 'MLP', 'MLPSF'];
+  categories = ['Z', 'C'];
+  cities = ['Tampa', 'Miami'];
+
+  submitted = false;
+
+  onSubmit() { this.submitted = true; }
+
+
+  //REMOVE THIS WHEN DONE
+  //get diagnostic() { return JSON.stringify(this.Query); }
+  
+
+  /*public indicators = [
     { value: 'MSP', display: 'Median Sale Price' },
     { value: 'MSPSF', display: 'Median Sale Price' },
     { value: 'MLP', display: 'Median Sale Price' },
@@ -27,7 +41,7 @@ export class ZillowComponent {
   public cities = [
     { value: '0001', display: 'New York, NY' },
     { value: '0002', display: 'Los Angeles, CA' }
-  ];
+  ];*/
 
   /* Need to create model */
 }

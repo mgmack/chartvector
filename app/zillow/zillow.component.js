@@ -11,25 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var ZillowComponent = (function () {
     function ZillowComponent() {
-        this.indicators = [
-            { value: 'MSP', display: 'Median Sale Price' },
-            { value: 'MSPSF', display: 'Median Sale Price' },
-            { value: 'MLP', display: 'Median Sale Price' },
-            { value: 'MLPSF', display: 'Median Sale Price' },
-            { value: 'PRR', display: 'Median Sale Price' },
-            { value: 'RMP', display: 'Median Sale Price' },
-            { value: 'RAH', display: 'Median Sale Price' },
-            { value: 'RZSF', display: 'Median Sale Price' }
-        ];
-        this.categories = [
-            { value: 'Z', display: 'ZipCode' },
-            { value: 'C', display: 'City' }
-        ];
-        this.cities = [
-            { value: '0001', display: 'New York, NY' },
-            { value: '0002', display: 'Los Angeles, CA' }
-        ];
+        this.indicators = ['MSP', 'MSPSF', 'MLP', 'MLPSF'];
+        this.categories = ['Z', 'C'];
+        this.cities = ['Tampa', 'Miami'];
+        this.submitted = false;
     }
+    ZillowComponent.prototype.onSubmit = function () { this.submitted = true; };
     ZillowComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
