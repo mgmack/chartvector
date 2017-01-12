@@ -9,19 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var quandl_service_1 = require('./service/quandl.service');
-var AppComponent = (function () {
-    function AppComponent() {
+var ZillowComponent = (function () {
+    function ZillowComponent() {
+        this.indicators = ['MSP', 'MSPSF', 'MLP', 'MLPSF'];
+        this.categories = ['Z', 'C'];
+        this.cities = ['Tampa', 'Miami'];
+        this.submitted = false;
     }
-    AppComponent = __decorate([
+    ZillowComponent.prototype.onSubmit = function () { this.submitted = true; };
+    ZillowComponent = __decorate([
         core_1.Component({
-            selector: 'chartvector',
-            template: '<top></top><router-outlet></router-outlet><foot></foot>',
-            providers: [quandl_service_1.QuandlService]
+            moduleId: module.id,
+            selector: 'zillow-input',
+            templateUrl: 'zillow.html',
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ZillowComponent);
+    return ZillowComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ZillowComponent = ZillowComponent;
+//# sourceMappingURL=zillow.component.js.map
