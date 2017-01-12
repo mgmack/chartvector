@@ -3,7 +3,9 @@
   <form>
       <div class="form-group">
           <label for="indicator">Chart Metric</label>
-          <input type="text" class="form-control" id="indicator" required>
+          <select class="form-control" id="indicator" required>
+            <option *ngFor="let indicator of indicators" [value]="indicator">{{indicatory}}</option>
+          </select>
       </div>
       <div class="form-group">
           <label for="category">Area Category</label>
