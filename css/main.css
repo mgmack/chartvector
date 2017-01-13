@@ -25,7 +25,9 @@ input {
    padding: 5px; /* If you add too much padding here, the options won't show in IE */
    width: 310px;
 }
-
+.hidden{
+	display:none;
+}
 /*margins*/
 .margin-bottom5{ 
 	margin-bottom:5px; 
