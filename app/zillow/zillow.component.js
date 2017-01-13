@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var ZillowComponent = (function () {
     function ZillowComponent() {
-        //indicators = ['MSP', 'MSPSF', 'MLP', 'MLPSF'];
         this.indicators = [
             { value: 'MSP', display: 'Median Sale Price' },
             { value: 'MSPSF', display: 'Median Sale Price per SQFT' },
@@ -22,12 +21,10 @@ var ZillowComponent = (function () {
             { value: 'RAH', display: 'Median Sale Price' },
             { value: 'RZSF', display: 'Median Sale Price' }
         ];
-        //categories = ['Z', 'C'];
         this.categories = [
             { value: 'Z', display: 'ZipCode' },
             { value: 'C', display: 'City' }
         ];
-        //cities = ['Tampa', 'Miami'];
         this.cities = [
             { value: '0001', display: 'New York, NY' },
             { value: '0002', display: 'Los Angeles, CA' }
