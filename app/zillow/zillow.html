@@ -4,16 +4,20 @@
       <div class="form-group">
           <label for="indicator">Chart Metric</label>
           <select class="form-control" id="indicator" required>
-            <option *ngFor="let indicator of indicators" [value]="indicator">{{indicatory}}</option>
+            <option *ngFor="let indicator of indicators" [value]="indicator.value">{{indicator.display}}</option>
           </select>
       </div>
       <div class="form-group">
           <label for="category">Area Category</label>
-          <input type="text" class="form-control" id="category" required>
+          <select class="form-control" id="category" required>
+            <option *ngFor="let category of categories" [value]="category.value">{{category.display}}</option>
+          </select>
       </div>
       <div class="form-group">
           <label for="city">City</label>
-          <input type="text" class="form-control" id="city">
+          <select class="form-control" id="city" required>
+            <option *ngFor="let city of cities" [value]="city.value">{{city.display}}</option>
+          </select>
       </div>
       <div class="form-group">
           <label for="zipcode">ZIPCode</label>

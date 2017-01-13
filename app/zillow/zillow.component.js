@@ -11,9 +11,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var ZillowComponent = (function () {
     function ZillowComponent() {
-        this.indicators = ['MSP', 'MSPSF', 'MLP', 'MLPSF'];
-        this.categories = ['Z', 'C'];
-        this.cities = ['Tampa', 'Miami'];
+        //indicators = ['MSP', 'MSPSF', 'MLP', 'MLPSF'];
+        this.indicators = [
+            { value: 'MSP', display: 'Median Sale Price' },
+            { value: 'MSPSF', display: 'Median Sale Price per SQFT' },
+            { value: 'MLP', display: 'Median List Price' },
+            { value: 'MLPSF', display: 'Median List Price per SQFT' },
+            { value: 'PRR', display: 'Median Sale Price' },
+            { value: 'RMP', display: 'Median Sale Price' },
+            { value: 'RAH', display: 'Median Sale Price' },
+            { value: 'RZSF', display: 'Median Sale Price' }
+        ];
+        //categories = ['Z', 'C'];
+        this.categories = [
+            { value: 'Z', display: 'ZipCode' },
+            { value: 'C', display: 'City' }
+        ];
+        //cities = ['Tampa', 'Miami'];
+        this.cities = [
+            { value: '0001', display: 'New York, NY' },
+            { value: '0002', display: 'Los Angeles, CA' }
+        ];
         this.submitted = false;
     }
     ZillowComponent.prototype.onSubmit = function () { this.submitted = true; };
@@ -22,6 +40,7 @@ var ZillowComponent = (function () {
             moduleId: module.id,
             selector: 'zillow-input',
             templateUrl: 'zillow.html',
+            styleUrls: ['zillow.css']
         }), 
         __metadata('design:paramtypes', [])
     ], ZillowComponent);
