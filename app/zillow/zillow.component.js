@@ -13,9 +13,9 @@ var ZillowComponent = (function () {
     function ZillowComponent() {
         this.indicators = [
             { value: 'MSP', display: 'Median Sale Price' },
-            { value: 'MSPSF', display: 'Median Sale Price' },
-            { value: 'MLP', display: 'Median Sale Price' },
-            { value: 'MLPSF', display: 'Median Sale Price' },
+            { value: 'MSPSF', display: 'Median Sale Price per SQFT' },
+            { value: 'MLP', display: 'Median List Price' },
+            { value: 'MLPSF', display: 'Median List Price per SQFT' },
             { value: 'PRR', display: 'Median Sale Price' },
             { value: 'RMP', display: 'Median Sale Price' },
             { value: 'RAH', display: 'Median Sale Price' },
@@ -29,12 +29,15 @@ var ZillowComponent = (function () {
             { value: '0001', display: 'New York, NY' },
             { value: '0002', display: 'Los Angeles, CA' }
         ];
+        this.submitted = false;
     }
+    ZillowComponent.prototype.onSubmit = function () { this.submitted = true; };
     ZillowComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'zillow-input',
             templateUrl: 'zillow.html',
+            styleUrls: ['zillow.css']
         }), 
         __metadata('design:paramtypes', [])
     ], ZillowComponent);
