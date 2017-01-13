@@ -35,6 +35,20 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script type="text/javascript">
+		function showDiv(select){
+		   if(select.value=="Z"){
+		    document.getElementById('zipcode_block').style.display = "block";
+		    document.getElementById('city_block').style.display = "none";
+		   } else if(select.value=="C"){
+		    document.getElementById('city_block').style.display = "block";
+		    document.getElementById('zipcode_block').style.display = "none";
+		   }else{
+			document.getElementById('city_block').style.display = "none";
+		    document.getElementById('zipcode_block').style.display = "none";
+		   }
+		} 
+</script>
 </head>
   <!-- 3. Display the application -->
   <body>
