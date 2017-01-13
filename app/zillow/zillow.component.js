@@ -9,6 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+//import { CORE_DIRECTIVES } from '@angular/common';
+var quandl_service_1 = require('../service/quandl.service');
 var ZillowComponent = (function () {
     function ZillowComponent() {
         this.indicators = [
@@ -16,10 +18,10 @@ var ZillowComponent = (function () {
             { value: 'MSPSF', display: 'Median Sale Price per SQFT' },
             { value: 'MLP', display: 'Median List Price' },
             { value: 'MLPSF', display: 'Median List Price per SQFT' },
-            { value: 'PRR', display: 'Median Sale Price' },
-            { value: 'RMP', display: 'Median Sale Price' },
-            { value: 'RAH', display: 'Median Sale Price' },
-            { value: 'RZSF', display: 'Median Sale Price' }
+            { value: 'PRR', display: 'Price to Rent Ratio' },
+            { value: 'RMP', display: 'Median Rent, Homes Listed for Rent' },
+            { value: 'RAH', display: 'Estimated Rent, Homes Listed for Rent' },
+            { value: 'RZSF', display: 'Estimated Rent per SQFT' }
         ];
         this.categories = [
             { value: 'Z', display: 'ZipCode' },
@@ -31,11 +33,14 @@ var ZillowComponent = (function () {
         ];
         this.submitted = false;
     }
-    ZillowComponent.prototype.onSubmit = function () { this.submitted = true; };
+    ZillowComponent.prototype.onSubmit = function () {
+        this.submitted = true;
+    };
     ZillowComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'zillow-input',
+            providers: [quandl_service_1.QuandlService],
             templateUrl: 'zillow.html',
             styleUrls: ['zillow.css']
         }), 
