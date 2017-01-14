@@ -10,15 +10,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
+var app_routing_1 = require('../app.routing');
 var chart_component_1 = require('./chart.component');
+var zillow_component_1 = require('./zillow/zillow.component');
 var ChartModule = (function () {
     function ChartModule() {
     }
     ChartModule = __decorate([
         core_1.NgModule({
-            imports: [common_1.CommonModule],
-            declarations: [chart_component_1.ChartComponent],
-            exports: [chart_component_1.ChartComponent]
+            imports: [common_1.CommonModule, app_routing_1.routing],
+            declarations: [chart_component_1.ChartComponent, zillow_component_1.ZillowComponent],
+            exports: [chart_component_1.ChartComponent, zillow_component_1.ZillowComponent],
+            providers: [app_routing_1.appRoutingProviders]
         }), 
         __metadata('design:paramtypes', [])
     ], ChartModule);

@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   moduleId: module.id,
-  selector: 'foot',
-  templateUrl: 'footer.html',
+  selector: 'about',
+  templateUrl: 'about.html',
 })
 
-export class FooterComponent { }
+export class AboutComponent { }

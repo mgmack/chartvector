@@ -12,15 +12,15 @@ var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 require('rxjs/add/operator/map');
 require('rxjs/add/operator/toPromise');
-var QuandlService = (function () {
-    function QuandlService(http) {
+var ZillowService = (function () {
+    function ZillowService(http) {
         this.http = http;
         this.endpoint_url = "https://www.quandl.com/api/v3/datasets/";
         this.url_query_string = ".json?api_key=";
         this.quandl_api_key = "1oC8WM9amPy7r5xsctjr";
         this.zillow_path = "ZILL/";
     }
-    QuandlService.prototype.getZillowData = function (area, areacode, indicator) {
+    ZillowService.prototype.getZillowData = function (area, areacode, indicator) {
         /* for documentation, see https://www.quandl.com/data/ZILL/documentation/documentation */
         return this.http.get(this.endpoint_url +
             this.zillow_path +
@@ -28,11 +28,11 @@ var QuandlService = (function () {
             this.url_query_string +
             this.quandl_api_key).map(function (res) { return res.json(); });
     };
-    QuandlService = __decorate([
+    ZillowService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [http_1.Http])
-    ], QuandlService);
-    return QuandlService;
+    ], ZillowService);
+    return ZillowService;
 }());
-exports.QuandlService = QuandlService;
-//# sourceMappingURL=quandl.service.js.map
+exports.ZillowService = ZillowService;
+//# sourceMappingURL=zillow.service.js.map

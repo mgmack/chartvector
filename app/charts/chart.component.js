@@ -9,20 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var zillow_service_1 = require('./charts/zillow/zillow.service');
-//import { ZillowComponent } from './zillow/zillow.component';
-var AppComponent = (function () {
-    function AppComponent() {
+var ChartComponent = (function () {
+    function ChartComponent() {
     }
-    AppComponent = __decorate([
+    ChartComponent = __decorate([
         core_1.Component({
-            selector: 'chartvector',
-            template: '<top></top><router-outlet></router-outlet><foot></foot>',
-            providers: [zillow_service_1.ZillowService]
+            moduleId: module.id,
+            selector: 'chart-output',
+            templateUrl: 'chart.component.html',
+            styleUrls: ['chart.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ChartComponent);
+    return ChartComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ChartComponent = ChartComponent;
+//# sourceMappingURL=chart.component.js.map

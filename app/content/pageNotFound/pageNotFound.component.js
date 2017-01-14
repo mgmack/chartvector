@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var ChartComponent = (function () {
-    function ChartComponent() {
+var PageNotFoundComponent = (function () {
+    function PageNotFoundComponent() {
     }
-    ChartComponent = __decorate([
+    PageNotFoundComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'chart-output',
-            templateUrl: 'chart.html',
+            selector: 'pageNotFound',
+            templateUrl: 'pageNotFound.html',
         }), 
         __metadata('design:paramtypes', [])
-    ], ChartComponent);
-    return ChartComponent;
+    ], PageNotFoundComponent);
+    return PageNotFoundComponent;
 }());
-exports.ChartComponent = ChartComponent;
-//# sourceMappingURL=chart.component.js.map
+exports.PageNotFoundComponent = PageNotFoundComponent;
+//# sourceMappingURL=pageNotFound.component.js.map

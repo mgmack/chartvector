@@ -9,20 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var zillow_service_1 = require('./charts/zillow/zillow.service');
-//import { ZillowComponent } from './zillow/zillow.component';
-var AppComponent = (function () {
-    function AppComponent() {
+var common_1 = require('@angular/common');
+var footer_component_1 = require('./footer/footer.component');
+var header_component_1 = require('./header/header.component');
+var SharedModule = (function () {
+    function SharedModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'chartvector',
-            template: '<top></top><router-outlet></router-outlet><foot></foot>',
-            providers: [zillow_service_1.ZillowService]
+    SharedModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule],
+            declarations: [footer_component_1.FooterComponent, header_component_1.HeaderComponent],
+            exports: [footer_component_1.FooterComponent, header_component_1.HeaderComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], SharedModule);
+    return SharedModule;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.SharedModule = SharedModule;
+//# sourceMappingURL=shared.module.js.map

@@ -9,4 +9,4 @@ var Query = (function () {
     return Query;
 }());
 exports.Query = Query;
-//# sourceMappingURL=query.js.map
+//# sourceMappingURL=zillow.query.model.js.map

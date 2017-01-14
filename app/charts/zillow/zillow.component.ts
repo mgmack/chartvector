@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 //import { CORE_DIRECTIVES } from '@angular/common';
-import { QuandlService } from '../service/quandl.service';
-import { Query } from './query';
+import { ZillowService } from './zillow.service';
+import { Query } from './zillow.query.model';
 
 @Component({
   moduleId: module.id,
   selector: 'zillow-input',
-  providers: [QuandlService],
-  templateUrl: 'zillow.html',
-  styleUrls: ['zillow.css']
+  providers: [ZillowService],
+  templateUrl: 'zillow.component.html',
+  styleUrls: ['zillow.component.css']
 })
 
 export class ZillowComponent {
@@ -37,7 +37,7 @@ export class ZillowComponent {
   submitted = false;
 
   onSubmit() {
-    this.submitted = true; 
+    this.submitted = true;
   }
 
 

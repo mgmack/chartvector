@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
-export class QuandlService {
+export class ZillowService {
   endpoint_url:string = "https://www.quandl.com/api/v3/datasets/";
   url_query_string:string = ".json?api_key=";
   quandl_api_key:string = "1oC8WM9amPy7r5xsctjr";

@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 //import { CORE_DIRECTIVES } from '@angular/common';
-var quandl_service_1 = require('../service/quandl.service');
+var zillow_service_1 = require('./zillow.service');
 var ZillowComponent = (function () {
     function ZillowComponent() {
         this.indicators = [
@@ -40,9 +40,9 @@ var ZillowComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'zillow-input',
-            providers: [quandl_service_1.QuandlService],
-            templateUrl: 'zillow.html',
-            styleUrls: ['zillow.css']
+            providers: [zillow_service_1.ZillowService],
+            templateUrl: 'zillow.component.html',
+            styleUrls: ['zillow.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], ZillowComponent);

@@ -9,18 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var FooterComponent = (function () {
-    function FooterComponent() {
+var common_1 = require('@angular/common');
+var about_component_1 = require('./about/about.component');
+var pageNotFound_component_1 = require('./pageNotFound/pageNotFound.component');
+var ContentModule = (function () {
+    function ContentModule() {
     }
-    FooterComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'foot',
-            templateUrl: 'footer.html',
+    ContentModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule],
+            declarations: [about_component_1.AboutComponent, pageNotFound_component_1.PageNotFoundComponent],
+            exports: [about_component_1.AboutComponent, pageNotFound_component_1.PageNotFoundComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], FooterComponent);
-    return FooterComponent;
+    ], ContentModule);
+    return ContentModule;
 }());
-exports.FooterComponent = FooterComponent;
-//# sourceMappingURL=footer.component.js.map
+exports.ContentModule = ContentModule;
+//# sourceMappingURL=content.module.js.map
