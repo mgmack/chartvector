@@ -16,7 +16,7 @@ var HeaderComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'top',
-            templateUrl: 'header.html',
+            templateUrl: 'header.component.html',
         }), 
         __metadata('design:paramtypes', [])
     ], HeaderComponent);

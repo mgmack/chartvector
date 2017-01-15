@@ -2,7 +2,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ZillowComponent } from './zillow/zillow.component';
-import { PageNotFoundComponent } from '../pageNotFound/pageNotFound.component';
+import { PageNotFoundComponent } from '../content/pageNotFound/pageNotFound.component';
 
 const chartRoutes: Routes = [
 

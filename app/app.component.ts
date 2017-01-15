@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { ZillowService } from './charts/zillow/zillow.service';
 
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './shared/header/header.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './content/about/about.component';
+import { FooterComponent } from './shared/footer/footer.component';
 //import { ZillowComponent } from './zillow/zillow.component';
 
 @Component({

@@ -19,6 +19,7 @@ import { PageNotFoundComponent } from './content/pageNotFound/pageNotFound.compo
 import { AboutComponent } from './content/about/about.component';
 /* Feature Components */
 
+import { ChartComponent } from './charts/chart.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './shared/footer/footer.component';

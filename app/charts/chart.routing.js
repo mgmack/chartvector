@@ -1,7 +1,7 @@
 "use strict";
 var router_1 = require('@angular/router');
 var zillow_component_1 = require('./zillow/zillow.component');
-var pageNotFound_component_1 = require('../pageNotFound/pageNotFound.component');
+var pageNotFound_component_1 = require('../content/pageNotFound/pageNotFound.component');
 var chartRoutes = [
     {
         path: 'zillow',

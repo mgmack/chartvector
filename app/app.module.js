@@ -23,6 +23,7 @@ var shared_module_1 = require('./shared/shared.module');
 var pageNotFound_component_1 = require('./content/pageNotFound/pageNotFound.component');
 var about_component_1 = require('./content/about/about.component');
 /* Feature Components */
+var chart_component_1 = require('./charts/chart.component');
 var header_component_1 = require('./shared/header/header.component');
 var home_component_1 = require('./home/home.component');
 var footer_component_1 = require('./shared/footer/footer.component');
@@ -36,7 +37,7 @@ var AppModule = (function () {
             declarations: [
                 app_component_1.AppComponent,
                 about_component_1.AboutComponent,
-                ChartComponent,
+                chart_component_1.ChartComponent,
                 footer_component_1.FooterComponent,
                 header_component_1.HeaderComponent,
                 home_component_1.HomeComponent,

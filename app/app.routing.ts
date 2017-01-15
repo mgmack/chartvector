@@ -14,13 +14,13 @@ import { PageNotFoundComponent } from './content/pageNotFound/pageNotFound.compo
 const appRoutes: Routes = [
 
   {
-    path: 'about',
-    component: AboutComponent
-
-  },
-    {
     path: '',
     component: HomeComponent
+
+  },
+  {
+    path: 'about',
+    component: AboutComponent
 
   },
   {
