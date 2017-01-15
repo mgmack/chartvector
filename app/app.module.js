@@ -20,13 +20,13 @@ var app_routing_1 = require('./app.routing');
 var chart_module_1 = require('./charts/chart.module');
 var content_module_1 = require('./content/content.module');
 var shared_module_1 = require('./shared/shared.module');
-var pageNotFound_component_1 = require('./content/pageNotFound/pageNotFound.component');
-var about_component_1 = require('./content/about/about.component');
 /* Feature Components */
+var about_component_1 = require('./content/about/about.component');
 var chart_component_1 = require('./charts/chart.component');
+var footer_component_1 = require('./shared/footer/footer.component');
 var header_component_1 = require('./shared/header/header.component');
 var home_component_1 = require('./home/home.component');
-var footer_component_1 = require('./shared/footer/footer.component');
+var pageNotFound_component_1 = require('./content/pageNotFound/pageNotFound.component');
 var zillow_component_1 = require('./charts/zillow/zillow.component');
 var AppModule = (function () {
     function AppModule() {

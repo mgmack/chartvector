@@ -6,8 +6,6 @@ import { FormsModule } from '@angular/forms';
 /* App Root */
 import { AppComponent } from './app.component';
 
-
-
 /* Routing */
 import { routing, appRoutingProviders } from './app.routing';
 
@@ -15,14 +13,14 @@ import { routing, appRoutingProviders } from './app.routing';
 import { ChartModule } from './charts/chart.module';
 import { ContentModule } from './content/content.module';
 import { SharedModule } from './shared/shared.module';
-import { PageNotFoundComponent } from './content/pageNotFound/pageNotFound.component';
-import { AboutComponent } from './content/about/about.component';
-/* Feature Components */
 
+/* Feature Components */
+import { AboutComponent } from './content/about/about.component';
 import { ChartComponent } from './charts/chart.component';
+import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './shared/footer/footer.component';
+import { PageNotFoundComponent } from './content/pageNotFound/pageNotFound.component';
 import { ZillowComponent } from './charts/zillow/zillow.component';
 
 

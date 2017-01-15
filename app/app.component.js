@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var zillow_service_1 = require('./charts/zillow/zillow.service');
-//import { ZillowComponent } from './zillow/zillow.component';
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -18,6 +17,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'chartvector',
             template: '<top></top><router-outlet></router-outlet><foot></foot>',
+            styleUrls: ['app.component.css'],
             providers: [zillow_service_1.ZillowService]
         }), 
         __metadata('design:paramtypes', [])
