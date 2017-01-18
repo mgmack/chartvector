@@ -9,18 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var HomeComponent = (function () {
-    function HomeComponent() {
+var ChartComponent = (function () {
+    function ChartComponent() {
     }
-    HomeComponent = __decorate([
+    ChartComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'home-page',
-            templateUrl: 'home.component.html',
+            selector: 'chart-output',
+            templateUrl: 'chart.component.html',
+            styleUrls: ['chart.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], HomeComponent);
-    return HomeComponent;
+    ], ChartComponent);
+    return ChartComponent;
 }());
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+exports.ChartComponent = ChartComponent;
+//# sourceMappingURL=chart.component.js.map
