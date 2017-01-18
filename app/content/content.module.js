@@ -10,16 +10,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
-var about_component_1 = require('./about/about.component');
-var pageNotFound_component_1 = require('./pageNotFound/pageNotFound.component');
+//import { AboutComponent } from './about/about.component';
+//import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
 var ContentModule = (function () {
     function ContentModule() {
     }
     ContentModule = __decorate([
         core_1.NgModule({
             imports: [common_1.CommonModule],
-            declarations: [about_component_1.AboutComponent, pageNotFound_component_1.PageNotFoundComponent],
-            exports: [about_component_1.AboutComponent, pageNotFound_component_1.PageNotFoundComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], ContentModule);

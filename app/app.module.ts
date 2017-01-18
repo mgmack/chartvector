@@ -11,31 +11,18 @@ import { routing, appRoutingProviders } from './app.routing';
 
 /* Feature Modules */
 import { ChartModule } from './charts/chart.module';
-import { ContentModule } from './content/content.module';
+//import { ContentModule } from './content/content.module';
 import { SharedModule } from './shared/shared.module';
 
 /* Feature Components */
-import { AboutComponent } from './content/about/about.component';
-import { ChartComponent } from './charts/chart.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { HeaderComponent } from './shared/header/header.component';
 import { HomeComponent } from './home/home.component';
-import { PageNotFoundComponent } from './content/pageNotFound/pageNotFound.component';
-import { ZillowComponent } from './charts/zillow/zillow.component';
+import { AboutComponent } from './about/about.component';
+import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
 
 
 @NgModule({
-	imports:      [ BrowserModule, routing, FormsModule, HttpModule, ChartModule, ContentModule, SharedModule ],
-	declarations: [
-		AppComponent,
-		AboutComponent,
-		ChartComponent,
-		FooterComponent,
-		HeaderComponent,
-		HomeComponent,
-		PageNotFoundComponent,
-		ZillowComponent
-	],
+	imports:      [ BrowserModule, routing, FormsModule, HttpModule, SharedModule, ChartModule ],
+	declarations: [ AppComponent,	HomeComponent, AboutComponent, PageNotFoundComponent ],
 	providers: [ appRoutingProviders ],
 	bootstrap: [ AppComponent ]
 })

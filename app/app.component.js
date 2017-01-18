@@ -9,16 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var zillow_service_1 = require('./charts/zillow/zillow.service');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
+            //moduleId: module.id,
             selector: 'chartvector',
             template: '<top></top><router-outlet></router-outlet><foot></foot>',
-            styleUrls: ['app.component.css'],
-            providers: [zillow_service_1.ZillowService]
+            styleUrls: ['./app/app.component.css'],
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

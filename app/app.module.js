@@ -18,32 +18,19 @@ var app_component_1 = require('./app.component');
 var app_routing_1 = require('./app.routing');
 /* Feature Modules */
 var chart_module_1 = require('./charts/chart.module');
-var content_module_1 = require('./content/content.module');
+//import { ContentModule } from './content/content.module';
 var shared_module_1 = require('./shared/shared.module');
 /* Feature Components */
-var about_component_1 = require('./content/about/about.component');
-var chart_component_1 = require('./charts/chart.component');
-var footer_component_1 = require('./shared/footer/footer.component');
-var header_component_1 = require('./shared/header/header.component');
 var home_component_1 = require('./home/home.component');
-var pageNotFound_component_1 = require('./content/pageNotFound/pageNotFound.component');
-var zillow_component_1 = require('./charts/zillow/zillow.component');
+var about_component_1 = require('./about/about.component');
+var pageNotFound_component_1 = require('./pageNotFound/pageNotFound.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, app_routing_1.routing, forms_1.FormsModule, http_1.HttpModule, chart_module_1.ChartModule, content_module_1.ContentModule, shared_module_1.SharedModule],
-            declarations: [
-                app_component_1.AppComponent,
-                about_component_1.AboutComponent,
-                chart_component_1.ChartComponent,
-                footer_component_1.FooterComponent,
-                header_component_1.HeaderComponent,
-                home_component_1.HomeComponent,
-                pageNotFound_component_1.PageNotFoundComponent,
-                zillow_component_1.ZillowComponent
-            ],
+            imports: [platform_browser_1.BrowserModule, app_routing_1.routing, forms_1.FormsModule, http_1.HttpModule, shared_module_1.SharedModule, chart_module_1.ChartModule],
+            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, about_component_1.AboutComponent, pageNotFound_component_1.PageNotFoundComponent],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
         }), 

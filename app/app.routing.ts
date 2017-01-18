@@ -6,11 +6,11 @@ import { ContentModule } from './content/content.module';
 
 import { AppComponent } from './app.component';
 
-import { AboutComponent } from './content/about/about.component';
+import { AboutComponent } from './about/about.component';
 
 import { HomeComponent } from './home/home.component';
 import { ZillowComponent } from './charts/zillow/zillow.component';
-import { PageNotFoundComponent } from './content/pageNotFound/pageNotFound.component';
+import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
 const appRoutes: Routes = [
 
   {
