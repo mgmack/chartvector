@@ -16,7 +16,7 @@ var AppComponent = (function () {
         core_1.Component({
             //moduleId: module.id,
             selector: 'chartvector',
-            template: '<top></top><router-outlet></router-outlet><foot></foot>',
+            template: '<header-component></header-component><router-outlet></router-outlet><footer-component></footer-component>',
             styleUrls: ['./app/app.component.css'],
         }), 
         __metadata('design:paramtypes', [])

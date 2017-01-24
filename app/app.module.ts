@@ -11,18 +11,15 @@ import { routing, appRoutingProviders } from './app.routing';
 
 /* Feature Modules */
 import { ChartModule } from './charts/chart.module';
-//import { ContentModule } from './content/content.module';
 import { SharedModule } from './shared/shared.module';
 
 /* Feature Components */
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
 
 
 @NgModule({
 	imports:      [ BrowserModule, routing, FormsModule, HttpModule, SharedModule, ChartModule ],
-	declarations: [ AppComponent,	HomeComponent, AboutComponent, PageNotFoundComponent ],
+	declarations: [ AppComponent,	HomeComponent ],
 	providers: [ appRoutingProviders ],
 	bootstrap: [ AppComponent ]
 })

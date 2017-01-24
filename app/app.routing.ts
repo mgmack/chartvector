@@ -6,7 +6,6 @@ import { ContentModule } from './content/content.module';
 
 import { AppComponent } from './app.component';
 
-import { AboutComponent } from './about/about.component';
 
 import { HomeComponent } from './home/home.component';
 import { ZillowComponent } from './charts/zillow/zillow.component';
@@ -18,19 +17,11 @@ const appRoutes: Routes = [
     component: HomeComponent
 
   },
-  {
-    path: 'about',
-    component: AboutComponent
 
-  },
   {
     path: 'zillow',
     component: ZillowComponent,
     data: { title: 'Real Estate Chart Creator'}
-
-  },
-  { path: '**',
-	  component: PageNotFoundComponent
 
   }
 

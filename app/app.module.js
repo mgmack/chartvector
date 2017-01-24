@@ -18,19 +18,16 @@ var app_component_1 = require('./app.component');
 var app_routing_1 = require('./app.routing');
 /* Feature Modules */
 var chart_module_1 = require('./charts/chart.module');
-//import { ContentModule } from './content/content.module';
 var shared_module_1 = require('./shared/shared.module');
 /* Feature Components */
 var home_component_1 = require('./home/home.component');
-var about_component_1 = require('./about/about.component');
-var pageNotFound_component_1 = require('./pageNotFound/pageNotFound.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, app_routing_1.routing, forms_1.FormsModule, http_1.HttpModule, shared_module_1.SharedModule, chart_module_1.ChartModule],
-            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, about_component_1.AboutComponent, pageNotFound_component_1.PageNotFoundComponent],
+            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
         }), 
