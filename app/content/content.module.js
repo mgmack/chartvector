@@ -9,18 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AboutComponent = (function () {
-    function AboutComponent() {
+var common_1 = require('@angular/common');
+//import { AboutComponent } from './about/about.component';
+//import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
+var ContentModule = (function () {
+    function ContentModule() {
     }
-    AboutComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'about',
-            templateUrl: 'about.html'
+    ContentModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule],
         }), 
         __metadata('design:paramtypes', [])
-    ], AboutComponent);
-    return AboutComponent;
+    ], ContentModule);
+    return ContentModule;
 }());
-exports.AboutComponent = AboutComponent;
-//# sourceMappingURL=about.component.js.map
+exports.ContentModule = ContentModule;
+//# sourceMappingURL=content.module.js.map

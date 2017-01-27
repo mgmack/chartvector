@@ -1,0 +1,157 @@
+body {
+   background-color: #808080;
+   font-family: 'Montserrat', sans-serif;
+}
+
+/*borders*/
+.border-black{
+	border:1px solid #000;
+}
+
+/*form items*/
+select {
+   border: 1px solid #000;
+   color:#b3b3b3;
+   font-size: 18px;
+   height: 49px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 310px;
+}
+input {
+   border: 1px solid #000;
+   color:#b3b3b3;
+   font-size: 18px;
+   height: 49px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 310px;
+}
+.hidden{
+	display:none;
+}
+/*margins*/
+.margin-bottom5{
+	margin-bottom:5px;
+}
+.margin-bottom10{
+	margin-bottom:10px;
+}
+.margin-bottom20 {
+	margin-bottom:20px;
+}
+.margin-bottom25 {
+    margin-bottom: 25px;
+}
+.margin-left10{
+	margin-left:10px;
+}
+.margin-left100{
+	margin-left:100px;
+}
+.margin-top20{
+	margin-top:20px;
+}
+.margin-top100 {
+	margin-top:100px;
+}
+.margin-top130 {
+	margin-top:100px;
+}
+.margin-top160 {
+	margin-top:160px;
+}
+.margin-top170 {
+	margin-top:170px;
+}
+.margin-top180 {
+	margin-top:180px;
+}
+.margin-top200 {
+	margin-top:200px;
+}
+.margin-top220 {
+	margin-top:220px;
+}
+.margin-top250 {
+	margin-top:250px;
+}
+
+/*padding*/
+.padding-left5 {
+	padding-left:5px;
+}
+.padding-left10 {
+	padding-left:10px;
+}
+.padding-left20 {
+	padding-left:20px;
+}
+.padding-left30 {
+	padding-left:30px;
+}
+.padding-left40 {
+	padding-left:40px;
+}
+.padding-left50 {
+	padding-left:50px;
+}
+.padding-left60 {
+	padding-left:60px;
+}
+.padding-left80 {
+	padding-left:80px;
+}
+.padding-left90 {
+	padding-left:90px;
+}
+.padding-left100 {
+	padding-left:100px;
+}
+.padding-left120 {
+	padding-left:120px;
+}
+
+/*sections and containers*/
+
+.main-container{
+	 border:1px solid #eee;
+	 background:url(../images/blue-background.png);
+}
+footer{
+	 margin: 50px 0;
+	 background-color: #ffeeee;
+	 height:300px;
+}
+.top-row{
+	background-color: #f9f9f9;
+	border-bottom:1px solid #eee;
+}
+/*typography*/
+.bold{
+	font-weight:bold;
+}
+.black{
+	color:#000;
+}
+.white{
+	color:#fff;
+}
+.large-paragraph{
+	font-size: 24px;
+	line-height: 1.6;
+}
+.huge{
+	font-size:90px;
+}
+
+@media (max-width: 1199px) {
+    .main-container {
+      background: #dceffb;
+    }
+}
+a.hover{
+	color: #fff;
+	text-decoration: underline;
+}
+a{
+	color: #fff;
+}

@@ -9,18 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AboutComponent = (function () {
-    function AboutComponent() {
+var common_1 = require('@angular/common');
+var footer_component_1 = require('./footer/footer.component');
+var header_component_1 = require('./header/header.component');
+var SharedModule = (function () {
+    function SharedModule() {
     }
-    AboutComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'about',
-            templateUrl: 'about.html'
+    SharedModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule],
+            declarations: [footer_component_1.FooterComponent, header_component_1.HeaderComponent],
+            exports: [footer_component_1.FooterComponent, header_component_1.HeaderComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AboutComponent);
-    return AboutComponent;
+    ], SharedModule);
+    return SharedModule;
 }());
-exports.AboutComponent = AboutComponent;
-//# sourceMappingURL=about.component.js.map
+exports.SharedModule = SharedModule;
+//# sourceMappingURL=shared.module.js.map

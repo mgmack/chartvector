@@ -6,25 +6,20 @@ import { FormsModule } from '@angular/forms';
 /* App Root */
 import { AppComponent } from './app.component';
 
-
-
 /* Routing */
 import { routing, appRoutingProviders } from './app.routing';
 
 /* Feature Modules */
-import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
-import { AboutComponent } from './about/about.component';
-/* Feature Components */
+import { ChartModule } from './charts/chart.module';
+import { SharedModule } from './shared/shared.module';
 
-import { HeaderComponent } from './header/header.component';
+/* Feature Components */
 import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component';
-import { ZillowComponent } from './zillow/zillow.component';
 
 
 @NgModule({
-	imports:      [ BrowserModule, routing, FormsModule, HttpModule ],
-	declarations: [ AppComponent, AboutComponent, HeaderComponent, HomeComponent, PageNotFoundComponent, FooterComponent, ZillowComponent ],
+	imports:      [ BrowserModule, routing, FormsModule, HttpModule, SharedModule, ChartModule ],
+	declarations: [ AppComponent,	HomeComponent ],
 	providers: [ appRoutingProviders ],
 	bootstrap: [ AppComponent ]
 })

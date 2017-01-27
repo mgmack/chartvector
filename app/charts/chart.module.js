@@ -9,18 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AboutComponent = (function () {
-    function AboutComponent() {
+var common_1 = require('@angular/common');
+var app_routing_1 = require('../app.routing');
+var chart_component_1 = require('./chart.component');
+var zillow_component_1 = require('./zillow/zillow.component');
+var ChartModule = (function () {
+    function ChartModule() {
     }
-    AboutComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'about',
-            templateUrl: 'about.html'
+    ChartModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule, app_routing_1.routing],
+            declarations: [chart_component_1.ChartComponent, zillow_component_1.ZillowComponent],
+            exports: [chart_component_1.ChartComponent, zillow_component_1.ZillowComponent],
+            providers: [app_routing_1.appRoutingProviders]
         }), 
         __metadata('design:paramtypes', [])
-    ], AboutComponent);
-    return AboutComponent;
+    ], ChartModule);
+    return ChartModule;
 }());
-exports.AboutComponent = AboutComponent;
-//# sourceMappingURL=about.component.js.map
+exports.ChartModule = ChartModule;
+//# sourceMappingURL=chart.module.js.map
