@@ -1,0 +1,32 @@
+.postscript-3col {
+  width: 30%;
+  display: inline-block;
+  border: 1px solid #666;
+  border-radius: 10px;
+  color: #fff;
+  height: 300px;
+  padding: 20px 10px 20px 10px;
+}
+
+.postscript-1 {
+  background-color: #fc0;
+  margin-left: 30px;
+}
+
+.postscript-2 {
+  background-color: #abc837;
+  margin-left: 20px;
+}
+
+.postscript-3 {
+  background-color: #5aa02c;
+  margin: 0 20px 0 20px;
+}
+
+.postscript-heading {
+  font-size: 4em;
+}
+
+.postscript-copy {
+  font-size: 2em;
+}

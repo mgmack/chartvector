@@ -17,6 +17,7 @@ var HomeComponent = (function () {
             moduleId: module.id,
             selector: 'home-page',
             templateUrl: 'home.component.html',
+            styleUrls: ['home.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);

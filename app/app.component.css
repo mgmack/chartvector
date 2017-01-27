@@ -1,6 +1,7 @@
 body {
    background-color: #808080;
    font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
 }
 
 /*borders*/
@@ -12,7 +13,7 @@ body {
 select {
    border: 1px solid #000;
    color:#b3b3b3;
-   font-size: 18px;
+   font-size: 1.125em;
    height: 49px;
    padding: 5px; /* If you add too much padding here, the options won't show in IE */
    width: 310px;
@@ -20,7 +21,7 @@ select {
 input {
    border: 1px solid #000;
    color:#b3b3b3;
-   font-size: 18px;
+   font-size: 1.125em;
    height: 49px;
    padding: 5px; /* If you add too much padding here, the options won't show in IE */
    width: 310px;
@@ -28,6 +29,27 @@ input {
 .hidden{
 	display:none;
 }
+
+.py2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.px1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mx1 {
+  margin: 0 10px 0 10px;
+}
+
+.ml1 {
+  margin-left: 10px;
+}
+
+
+
 /*margins*/
 .margin-bottom5{
 	margin-bottom:5px;
@@ -136,11 +158,11 @@ footer{
 	color:#fff;
 }
 .large-paragraph{
-	font-size: 24px;
+	font-size: 1.5em;
 	line-height: 1.6;
 }
 .huge{
-	font-size:90px;
+	font-size:5.6em;
 }
 
 @media (max-width: 1199px) {
